@@ -63,6 +63,15 @@ p {
   line-height: 150%;
 }
 
+footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
 .modal {
   display: none;
   position: fixed;
