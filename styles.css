@@ -46,10 +46,9 @@ h2 {
 }
 
 img {
-  width: 100%;
+  width: 80%;
   max-width: 500px;
   height: auto;
-  display: block;
   margin-bottom: 10px;
 }
 
