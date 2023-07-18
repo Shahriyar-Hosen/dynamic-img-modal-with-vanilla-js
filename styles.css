@@ -70,6 +70,13 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
+  margin-top: 20px;
+  padding: 20px 10px;
+  border-top: 10px solid #333;
+}
+
+footer img {
+  width: 100%;
 }
 
 .modal {
