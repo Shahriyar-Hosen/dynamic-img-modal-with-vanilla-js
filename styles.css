@@ -63,14 +63,6 @@ p {
   line-height: 150%;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 .modal {
   display: none;
   position: fixed;
