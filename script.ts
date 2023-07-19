@@ -88,3 +88,23 @@ document.addEventListener("click", function (event) {
     modal3.style.display = "none";
   }
 });
+
+// example 5
+const modal4 = document.getElementById("myModal") as HTMLElement;
+
+document.addEventListener("click", function (event) {
+  const targetElement = event.target as HTMLElement | null;
+  const modalImage = document.getElementById("modalImage") as HTMLImageElement;
+
+  if (targetElement?.classList.contains("productImage")) {
+    if (targetElement instanceof HTMLImageElement) {
+      modalImage.src = targetElement.src;
+    }
+    modal4.style.display = "block";
+  } else if (
+    targetElement?.classList.contains("close") ||
+    targetElement === modal4
+  ) {
+    modal4.style.display = "none";
+  }
+});
