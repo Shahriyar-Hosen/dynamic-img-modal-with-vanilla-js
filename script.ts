@@ -1,3 +1,5 @@
+// example 1
+
 const productImages = document.getElementsByClassName(
   "productImage"
 ) as HTMLCollectionOf<HTMLImageElement>;
@@ -20,5 +22,27 @@ document
 window.addEventListener("click", function (event) {
   if (event.target === modal) {
     modal.style.display = "none";
+  }
+});
+
+// example 2
+
+const modal1 = document.getElementById("myModal") as HTMLElement;
+
+document.addEventListener("click", function (e: MouseEvent) {
+  const targetElement = e.target as HTMLElement;
+  if (targetElement?.classList.contains("productImage")) {
+    const modalImage = document.getElementById(
+      "modalImage"
+    ) as HTMLImageElement;
+    if (targetElement instanceof HTMLImageElement) {
+      modalImage.src = targetElement.src;
+    }
+    modal1.style.display = "block";
+  } else if (
+    targetElement?.classList?.contains("close") ||
+    targetElement === modal1
+  ) {
+    modal1.style.display = "none";
   }
 });
