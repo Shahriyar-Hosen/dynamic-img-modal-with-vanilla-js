@@ -29,7 +29,7 @@ header h1 {
 main {
   padding: 20px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -58,13 +58,13 @@ img {
 
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 150%;
 }
 
 footer {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
