@@ -46,3 +46,25 @@ document.addEventListener("click", function (e: MouseEvent) {
     modal1.style.display = "none";
   }
 });
+
+// example 3
+
+const modal2 = document.getElementById("myModal") as HTMLElement;
+
+document.addEventListener("click", (e: MouseEvent) => {
+  const targetElement = e.target as HTMLElement;
+  if (targetElement?.classList?.contains("productImage")) {
+    const modalImage = document.getElementById(
+      "modalImage"
+    ) as HTMLImageElement;
+    if (targetElement instanceof HTMLImageElement) {
+      modalImage.src = targetElement.src;
+    }
+    modal2.style.display = "block";
+  } else if (
+    targetElement?.classList?.contains("close") ||
+    targetElement === modal2
+  ) {
+    modal2.style.display = "none";
+  }
+});
