@@ -87,7 +87,6 @@ document.addEventListener("click", function (event) {
 });
 
 // example 5
-
 const modal4 = document.getElementById("myModal") as HTMLElement;
 
 document.addEventListener("click", function (event) {
