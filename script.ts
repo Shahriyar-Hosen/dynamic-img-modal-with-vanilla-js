@@ -1,5 +1,4 @@
 // example 1
-
 const productImages = document.getElementsByClassName(
   "productImage"
 ) as HTMLCollectionOf<HTMLImageElement>;
