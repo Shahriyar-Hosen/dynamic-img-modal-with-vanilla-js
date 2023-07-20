@@ -25,7 +25,6 @@ window.addEventListener("click", function (event) {
 });
 
 // example 2
-
 const modal1 = document.getElementById("myModal") as HTMLElement;
 
 document.addEventListener("click", function (e: MouseEvent) {
