@@ -21,6 +21,4 @@ window.addEventListener("click", function (event) {
   }
 });
 
-window.addEventListener("scroll", function () {
-  modal.style.display = "none";
-});
+window.addEventListener("scroll", function () {});
