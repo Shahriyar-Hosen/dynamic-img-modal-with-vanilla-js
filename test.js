@@ -20,5 +20,3 @@ window.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
-
-window.addEventListener("scroll", function () {});
