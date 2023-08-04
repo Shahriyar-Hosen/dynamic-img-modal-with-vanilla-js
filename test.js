@@ -16,6 +16,5 @@ document
   });
 
 window.addEventListener("click", function (event) {
-  if (event.target == modal) {
-  }
+  if (event.target == modal) 
 });
