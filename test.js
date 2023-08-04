@@ -15,6 +15,4 @@ document
     modal.style.display = "none";
   });
 
-window.addEventListener("click", function (event) {
-  if (event.target == modal) 
-});
+window.addEventListener("click", function (event) {});
