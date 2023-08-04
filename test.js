@@ -28,4 +28,3 @@ window.addEventListener("scroll", function () {
 // Main code:
 
 window.addEventListener("scroll", function () {
-  modal.style.display = "none";
