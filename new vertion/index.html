@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Modal Example</title>
+    <title>Dynamic Image Modal With Vanilla js</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <style>
-    body {
+    .insg-blog-body {
       width: 30%;
       margin: 0 auto;
     }
 
-    p {
+    .insg-blog-content {
       font-size: 18px;
       font-weight: 500;
       line-height: 1.8rem;
     }
 
-    img {
+    .insg-blog-img {
       width: 100%;
       cursor: zoom-in;
       transition: 0.5s ease-in-out;
     }
   </style>
-  <body>
+  <body class="insg-blog-body">
     <section>
-      <p>
+      <p class="insg-blog-content">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
         velit perferendis quidem deleniti porro voluptatibus neque a mollitia
         recusandae maiores ipsa voluptatum explicabo, obcaecati cupiditate odio
@@ -44,9 +44,9 @@
         ab sequi, obcaecati, cupiditate, nisi odio recusandae cum alias
       </p>
       <div class="img-container">
-        <img src="../img/img-1.jpg" alt="" class="img" />
+        <img src="../img/img-1.jpg" alt="" class="img insg-blog-img" />
       </div>
-      <p>
+      <p class="insg-blog-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia
         tempora ipsam, consectetur saepe voluptate dolore asperiores provident
         dolores accusamus, ea minima odit officia enim quae cupiditate natus
@@ -74,15 +74,15 @@
     </section>
 
     <section>
-      <p>
+      <p class="insg-blog-content">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
         velit perferendis quidem deleniti porro voluptatibus neque a mollitia
         recusandae maiores ipsa voluptatum explicabo, obcaecati cupiditate
       </p>
       <div class="img-container">
-        <img src="../img/img-1.jpg" alt="" class="img" />
+        <img src="../img/img-1.jpg" alt="" class="img insg-blog-img" />
       </div>
-      <p>
+      <p class="insg-blog-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia
         tempora ipsam, consectetur saepe voluptate dolore asperiores provident
         dolores accusamus, ea minima odit officia enim quae cupiditate natus
@@ -96,7 +96,7 @@
     </section>
 
     <section>
-      <p>
+      <p class="insg-blog-content">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
         velit perferendis quidem deleniti porro voluptatibus neque a mollitia
         recusandae maiores ipsa voluptatum explicabo, obcaecati cupiditate odio
@@ -109,9 +109,9 @@
         delectus, aspernatur asperiores? Est eos aspernatur voluptates,
       </p>
       <div class="img-container">
-        <img src="../img/img-1.jpg" alt="" class="img" />
+        <img src="../img/img-1.jpg" alt="" class="img insg-blog-img" />
       </div>
-      <p>
+      <p class="insg-blog-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quia
         tempora ipsam, consectetur saepe voluptate dolore asperiores provident
         dolores accusamus, ea minima odit officia enim quae cupiditate natus
@@ -184,9 +184,16 @@
           // Check if the image is already scaled up
           if (images[i].style.transform !== "scale(2)") {
             scaleUpImage(images[i]);
+            // images[i].style.position = "fixed";
+            // images[i].style.top = "10px";
+            // images[i].style.left = "20px";
+            // images[i].style.zIndex = "50";
             images[i].style.cursor = "zoom-out";
           } else {
             scaleDownImage(images[i]);
+            // images[i].style.position = "relative";
+            // images[i].style.top = "0";
+            // images[i].style.left = "0";
             images[i].style.cursor = "zoom-in";
           }
         });
