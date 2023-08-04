@@ -8,5 +8,3 @@ for (var i = 0; i < productImages.length; i++) {
     modal.style.display = "block";
   });
 }
-
-document.getElementsByClassName("close")[0];
