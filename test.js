@@ -3,7 +3,5 @@ var modalImage = document.getElementById("modalImage");
 var modal = document.getElementById("myModal");
 
 for (var i = 0; i < productImages.length; i++) {
-  productImages[i].addEventListener("click", function () {
-    modal.style.display = "block";
-  });
+  productImages[i].addEventListener("click", function () {});
 }
