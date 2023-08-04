@@ -9,6 +9,4 @@ for (var i = 0; i < productImages.length; i++) {
   });
 }
 
-document
-  .getElementsByClassName("close")[0]
-  .addEventListener("click", function () {});
+document.getElementsByClassName("close")[0];
